@@ -72,15 +72,15 @@ public class MovieDB{
 	public MyLinkedList<MovieDBItem> items(){
 		MyLinkedList<MovieDBItem> QueryResult=new MyLinkedList<MovieDBItem>();
 		
-		if(Biglist.isEmpty()) return QueryResult=null;//Big list is empty
-		else{//Big list is not empty
+		//if(Biglist.isEmpty()) return QueryResult=null;//Big list is empty
+		//else{//Big list is not empty
 	    	for(MovieList temp : Biglist){	
 	    		for(String temptitle: temp){
 	    			QueryResult.add(new MovieDBItem(temp.genrename, temptitle));
 	    		}
-			}
-			return QueryResult;
 		}
+			return QueryResult;
+		//}
 	}
 }//class MovieDB
 /***************************************************************************************
